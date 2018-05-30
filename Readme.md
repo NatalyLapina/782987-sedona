@@ -1,7 +1,7 @@
 # Личный проект «Седона»
 
 * Студент: [Наталья Лапина](https://up.htmlacademy.ru/htmlcss/21/user/782987).
-* Наставник: `Неизвестно`.
+* Наставник: [Макс Пушкарев] (https://up.htmlacademy.ru/htmlcss/21/tutors).
 
 ---
 
