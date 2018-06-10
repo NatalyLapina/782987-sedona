@@ -2,7 +2,7 @@
 <html lang="ru">
     <head>
         <meta charset="utf-8">
-        <title>HTML Academy: Седона</title>
+        <title>Седона</title>
     </head>
     <body>
         <div class="main-container">
@@ -21,13 +21,13 @@
             </header>
             <main>
                 <section class="intro">
-                    <img src="img/inscriptions.png" width="458" height="352" alt="Welcome to Sedona">
+                    <img src="img/inscriptions.png" width="458" height="352" alt="Welcome to the gorgeous Sedona, because the Grand Canyon sucks">
                 </section>
             
                 <h1 class="intro-title">Седона-небольшой городок в Аризоне, заслуживающий большего!</h1>
             
                 <section class="features">
-                    <h2>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон</h2>
+                    <h2>Рассмотри 5 причин, по которым Седона круче, чем Гранд Каньон!</h2>
                         <ul class="features-list">
                             <li class="features-item features-item-blue">
                                 <h3>Настоящий городок</h3> 
@@ -37,8 +37,7 @@
                             <li class="features-item-image">
                                 <img src="img/city.jpg" width="800" height="401" alt="Вид города">
                             </li>
-                        </ul>    
-                            
+                        </ul>     
                         <ul class="features-list">
                             <li class="features-item features-item-white">
                                 <h3>Жильё</h3>
@@ -82,24 +81,42 @@
                         </ul>            
                 </section>
             
-                <section class="hotel-search">
-                    <h2>Заинтересовались?</h2>
+                <section class="search">
+                    <h2 class="visually-hidden">Поиск гостиницы в Седоне</h2>
+                    <b>Заинтересовались?</b>
                     <p>Укажите предполагаемые даты поездки, и мы покажем вам лучшие предложения гостиниц в Седоне</p>
-                    <a class="button" href="#">Поиск гостиницы в Седоне</a>
-                    <div class="modal-search">
-                        <h3 class="visually-hidden">Форма поиска гостиницы</h3>
-                        <p>Дата заезда:</p>
-                        <p>Дата выезда:</p>
-                        <p>Взрослые:</p>
-                        <p>Дети:</p>
-                        <p>Найти</p>
-                        <!-- Здесь будет форма -->
+                    <button class="button button-search" type="button">Поиск гостиницы в Седоне</button>
+                    <div class="search-modal">
+                        <form class="search-form" action="https://echo.htmlacademy.ru" method="get">
+                            <p class="search-item">
+                                <label for="search-checkin">Дата заезда:</label>
+                                <input id="search-checkin" type="text" name="checkin" value="24 апреля 2017" placeholder="24 апреля 2017">
+                                <button class="calendar" type="button"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
+                            </p>
+                            <p class="search-item">
+                                <label for="search-checkout">Дата выезда:</label>
+                                <input id="search-checkout" type="text" name="checkout" value="4 июля 2017" placeholder="4 июля 2017">
+                                <button class="calendar" type="button"><img src="img/calendar.svg" width="21" height="22" alt="Календарь"></button>
+                            </p>
+                            <p class="search-item">
+                                <label for="search-adult">Взрослые:</label>
+                                <button class="minus" type="button">-</button>
+                                <input id="search-adult" type="text" name="adult" value="2"/>
+                                <button class="plus" type="button">+</button>
+                                
+                                <label for="search-child">Дети:</label>
+                                <button class="minus" type="button">-</button>
+                                <input id="search-child" type="text" name="child" value="0"/>
+                                <button class="plus" type="button">+</button>                                
+                            </p>
+                            <button class="button button-search" type="submit">Найти</button>
+                        </form>
                     </div>            
                 </section>
             
                 <section class="map">
                     <h2 class="visually-hidden">Местоположение Седоны</h2>
-                    <img src="img/map.jpg" width="1200" height="593" alt="Карта">                
+                    <img src="img/map.jpg" width="1200" height="593" alt="Седона находится в штате Аризона, в 60 км от Флагстаффа">                
                 </section>     
             </main>
         
