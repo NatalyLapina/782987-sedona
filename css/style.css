@@ -1,0 +1,248 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "PT Sans", "Arial", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    color: #333333; 
+    text-transform: uppercase;
+    background-color: #ffffff;
+}
+
+.main-container {
+    width: 1200px;
+
+}
+
+a {
+    text-decoration: none;
+}
+
+.button {
+    font: inherit;
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #ffffff;
+    background-color: #81b3d2;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: none;
+}
+
+.button:hover,
+.button:focus {
+    background-color: #669ec0;
+}
+
+.button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3);
+}
+
+.button-brown {
+    background-color: #766357;
+}
+
+.button-brown:hover,
+.button-brown:focus {
+    background-color: #604e43;
+}
+
+.button-brown:active {
+    background-color: #503e33;
+}
+
+.site-navigation {
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000;
+    background-color: #ffffff;
+    list-style: none;
+}
+
+.site-navigation a {
+   color: #000000; 
+}
+
+.site-navigation a:hover,
+.site-navigation a:focus {
+  color: #81b3d2;
+}
+
+.site-navigation a:active {
+  color: #766357;
+}
+
+.intro {
+    height: 508px;
+    background-color: #dad7db;
+    background-image: url("../img/background-photo.jpg"), url("../img/shape.png");
+    background-position: contain, 10px;
+    background-repeat: no-repeat;
+}
+
+.intro img {
+    padding-top: 76px;   
+}
+
+.intro-title h1 {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    text-align: center;
+}
+
+.features h2 {
+    font-size: 14px;
+    line-height: 26px;
+    font-weight: normal;
+    text-align: center;
+}
+
+.features-list {
+    list-style: none;
+}
+
+.features-item-blue {
+    background-color: #81b3d2;
+} 
+
+.features-item-white {
+    background-color: #ffffff;
+} 
+
+.features-item-grey {
+    background-color: #eeeeee;
+} 
+
+.features-item-blue h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #ffffff;
+    text-align: center;
+}
+
+.features-item-white h3,
+.features-item-grey h3 {
+    font-size: 21px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.features-item p {
+    text-align: center;
+}
+
+.features-item-blue p {
+    color: #ffffff;
+}
+
+.search b {
+    font-size: 30px;
+    line-height: 36px;
+    font-weight: bold;
+    color: #000000;
+    text-align: center;
+}
+
+.search p {
+    line-height: 24px;
+    text-align: center;
+}
+
+.search-form label {
+    font-weight: bold; 
+    color: #000000;
+}
+
+.search-form input {
+    font: inherit;
+    background-color: #f2f2f2;
+    font-weight: bold;
+    border: none;
+    text-transform: uppercase;
+}
+
+.search-form input:hover {
+    background-color: #ebebeb;
+}
+
+.search-form input:focus {
+    background-color: #ffffff;
+    border: 2px solid #e5e5e5;
+} 
+
+.main-footer .hashtag {
+    font-size: 21px;
+    line-height: 26px;
+    font-weight: bold;
+    color: #000000; 
+    background-color: #ffffff;
+    text-align: center;
+}
+
+
+.footer-social {
+    text-align: center;
+}
+
+.footer-social ul {
+    list-style: none;
+}
+
+.social-button {
+    color: #ffffff;
+    background-color: #81b3d2;
+}
+
+.social-button:hover,
+.social-button:focus {
+    background-color: #669ec0;
+}
+
+.social-button:active {
+    background-color: #5496bd;
+    color: rgba(255, 255, 255, 0.3)
+}
+
+.footer-copyright {
+    line-height: 26px;
+}
+
+.site-navigation-current a {
+    color: #766357;
+}
+
+.filters {
+    color: #ffffff;
+    background-color: #518bbb;
+    background-image: url("../img/filter-background.jpg");
+    background-position: bottom;
+    background-repeat: no-repeat;
+}
+
+.filter legend {
+    font-size: 16px;
+    font-weight: bold;
+}
+
+.button-filter {
+    font: inherit;
+    color: #ffffff;
+    background-color: transparent;
+    text-align: center;
+    vertical-align: middle;
+    text-transform: uppercase;
+    border: 2px solid #ffffff;;
+}
+
+.button-filter:hover, 
+.button-filter:focus {
+    color: #000000;
+    background-color: #ffffff;
+}
+
