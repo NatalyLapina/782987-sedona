@@ -15,10 +15,10 @@
                 </a>
                 <nav class="main-navigation">
                     <ul class="site-navigation">
-                        <li><a href="info.html">Информация</a></li>
-                        <li><a href="media.html">Фото и видео</a></li>
-                        <li><a href="map.html">Карта</a></li>
-                        <li class="site-navigation-current"><a href="hotels.html">Гостиницы</a></li>              
+                        <li><a class="site-navigation-link" href="info.html">Информация</a></li>
+                        <li><a class="site-navigation-link" href="media.html">Фото и видео</a></li>
+                        <li><a class="site-navigation-link" href="map.html">Карта</a></li>
+                        <li class="site-navigation-link"><a class="navigation-current-link" href="hotels.html">Гостиницы</a></li>              
                     </ul>
                 </nav>
             </header>
@@ -30,8 +30,8 @@
                     <h2 class="visually-hidden">Подбор гостиницы</h2>
                     <form class="filter" action="https://echo.htmlacademy.ru" method="get">
                         <fieldset class="filter-column">
-                            <legend>Инфраструктура:</legend>
-                            <ul> 
+                            <legend class="filter-legend">Инфраструктура:</legend>
+                            <ul class="filter-list"> 
                                 <li class="filter-option">
                                     <input id="filter-pool" class="visually-hidden filter-input" type="checkbox" name="pool" checked>
                                     <label for="filter-pool">Бассейн</label>
@@ -48,8 +48,8 @@
                         </fieldset>
                     
                         <fieldset class="filter-column">
-                            <legend>Тип жилья:</legend>
-                            <ul> 
+                            <legend class="filter-legend">Тип жилья:</legend>
+                            <ul class="filter-list"> 
                                 <li class="filter-option">
                                     <input id="filter-hotel" class="visually-hidden filter-input" type="checkbox" name="hotel" checked>
                                     <label for="filter-hotel">Гостиница</label>
@@ -65,7 +65,7 @@
                             </ul>
                         </fieldset>
                         <fieldset class="filter-column">
-                            <legend>Стоимость в сутки (р):</legend>
+                            <legend class="filter-legend">Стоимость в сутки (р):</legend>
                             <label for="filter-price-min">От</label>
                             <input id="filter-price-min" type="text" name="price-min" value="0">
                             <label for="filter-price-max">До</label>
@@ -87,14 +87,14 @@
             
                 <section class="sorting">
                     <h2 class="visually-hidden">Сортировка</h2>
-                    <p>Найдено: 3</p>
+                    <p class="sorting-amt">Найдено: 3</p>
                     <ul class="sorting-list">
                         <li class="sorting-item-text"><span>Сортировка:</span></li>
-                        <li class="sorting-item sorting-item-current"><a href="#">По цене</a></li>
-                        <li class="sorting-item"><a href="#">По типу</a></li>
-                        <li class="sorting-item"><a href="#">По рейтингу</a></li>
-                        <li class="sorting-item-up"><a href="#">icon-up</a></li>
-                        <li class="sorting-item-down sorting-item-current"><a href="#">icon-down</a></li>
+                        <li class="sorting-item"><a class="sorting-current-link" href="#">По цене</a></li>
+                        <li class="sorting-item"><a class="sorting-item-link" href="#">По типу</a></li>
+                        <li class="sorting-item"><a class="sorting-item-link" href="#">По рейтингу</a></li>
+                        <li class="sorting-item-up"><a class="sorting-up-link" href="#">icon-up</a></li>
+                        <li class="sorting-item-down"><a class="sorting-down-link sorting-current-link" href="#">icon-down</a></li>
                     </ul>                
                 </section>
             
@@ -174,7 +174,7 @@
             <footer class="main-footer">
                 <p class="hashtag">#visitsedona</p>
                 <div class="footer-social">
-                    <ul>
+                    <ul class="footer-social-list">
                         <li><a class="social-button social-button-tw" href="#">Твиттер</a></li>
                         <li><a class="social-button social-button-fb" href="#">Фейсбук</a></li>
                         <li><a class="social-button social-button-yt" href="#">Ютуб</a></li>

@@ -63,20 +63,20 @@ a {
     list-style: none;
 }
 
-.site-navigation a {
+.site-navigation-link {
     color: #000000; 
 }
 
-.site-navigation a:hover,
-.site-navigation a:focus {
+.site-navigation-link:hover,
+.site-navigation-link:focus {
     color: #81b3d2;
 }
 
-.site-navigation a:active {
+.site-navigation-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
-.main-header-logo a {
+.main-header-logo {
     text-align: center;
 }
 
@@ -90,12 +90,12 @@ a {
     text-align: center;
 }
 
-.intro img {
+.intro-image {
     padding-top: 76px;
     padding-bottom: 80px;
 }
 
-.intro-title h1 {
+.intro-title {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -103,7 +103,7 @@ a {
 }
 
 /*преимущества*/
-.features h2 {
+.features-title {
     font: inherit;
     line-height: 26px;
     color: #333333;
@@ -114,22 +114,22 @@ a {
     list-style: none;
 }
 
-.features-item h3 {
+.features-item-title {
     font-size: 21px;
     font-weight: bold;
     text-align: center;
 }
 
-.features-item-blue h3 {
+.features-item-blue .features-item-title {
     color: #ffffff;
 }
 
-.features-item p {
+.features-item-text {
     color: #333333;
     text-align: center;
 }
 
-.features-item-blue p {
+.features-item-blue .features-item-text {
     color: #ffffff;
 }
 
@@ -146,37 +146,37 @@ a {
 }
 
 /*поиск*/
-.search b {
+.search-question {
     font-size: 30px;
     line-height: 36px;
     font-weight: bold;
     text-align: center;
 }
 
-.search p {
+.search-text {
     line-height: 24px;
     text-align: center;
     color: #333333;
 }
 
-.search-form label {
+.search-form-label {
     font-weight: bold; 
     color: #000000;
     text-align: left;
 }
 
-.search-form input {
+.search-form-input {
     background-color: #f2f2f2;
     font-weight: bold;
     border: none;
     text-transform: uppercase;
 }
 
-.search-form input:hover {
+.search-form-input:hover {
     background-color: #ebebeb;
 }
 
-.search-form input:focus {
+.search-form-input:focus {
     background-color: #ffffff;
     border: 2px solid #e5e5e5;
 } 
@@ -193,7 +193,7 @@ a {
     text-align: center;
 }
 
-.footer-social ul {
+.footer-social-list {
     list-style: none;
 }
 
@@ -218,13 +218,13 @@ a {
 }
 
 /*страница подбора гостиницы*/
-.site-navigation-current a {
+.navigation-current-link {
     color: #766357;
 }
 
-.site-navigation-current a:hover,
-.site-navigation-current a:focus,
-.site-navigation-current a:active {
+.navigation-current-link:hover,
+.navigation-current-link:focus,
+.navigation-current-link:active {
   color: #766357;
 }
 
@@ -237,15 +237,15 @@ a {
     background-repeat: no-repeat;
 }
 
-.filters fieldset {
+.filters .filter-column {
     border: none;
 }
 
-.filters ul {
+.filter-list {
     list-style: none;
 }
 
-.filter legend {
+.filter-legend {
     font-size: 16px;
     font-weight: bold;
 }
@@ -267,7 +267,7 @@ a {
 }
 
 /*сортировка*/
-.sorting p {
+.sorting-amt {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -279,47 +279,48 @@ a {
     line-height: 18px;
 }
 
-.sorting-item a {
+.sorting-item-link {
     color: rgba(0, 0, 0, 0.3);
-    border-bottom: 1px dashed #81b3d2;
+    border-bottom: 1px dotted #81b3d2;
 }
 
-.sorting-item a:hover,
-.sorting-item a:focus {
+.sorting-item-link:hover,
+.sorting-item-link:focus {
     color: #81b3d2;
 }
 
-.sorting-item a:active {
+.sorting-item-link:active {
     color: #000000;
     border-bottom: none;
 }
 
-.sorting-item-current a {
+.sorting-current-link {
     color: #81b3d2;
     border-bottom: none;
 }
 
-.sorting-item-current a:hover,
-.sorting-item-current a:focus,
-.sorting-item-current a:active {
+.sorting-current-link:hover,
+.sorting-current-link:focus,
+.sorting-current-link:active {
   color: #81b3d2;
 }
 
 
-.sorting-item-up a,
-.sorting-item-down a {
+.sorting-up-link,
+.sorting-down-link {
     color: #cacaca;
 }
 
-.sorting-item-up a:hover,
-.sorting-item-down a:hover,
-.sorting-item-up a:focus,
-.sorting-item-down a:focus {
+.sorting-up-link:hover,
+.sorting-down-link:hover,
+.sorting-up-link:focus,
+.sorting-down-link:focus {
     color: #000000;
 }
 
-.sorting-item-up a:active,
-.sorting-item-down a:active {
+.sorting-up-link:active,
+.sorting-down-link:active,
+.sorting-item-down .sorting-current-link {
     color: #81b3d2;
 }
 
