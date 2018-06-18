@@ -26,6 +26,7 @@ html {
     margin: 0 40px;
     padding: 0;
     background-color: #ffffff;
+/*    background-color: red; временно чтоб видеть отступы*/
 }
 
 a {
@@ -199,7 +200,7 @@ a {
     background-color: rgba(255, 255, 255, 0.9);
 }
 
-.hashtag {
+.footer-hashtag {
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
@@ -373,10 +374,9 @@ a {
 
 
 
-/* Сеточные стили*/
+/* Сеточные стили для главной*/
 
 .main-header {
-    min-height: 56px;
     width: 100%;
 }
 
@@ -388,10 +388,6 @@ a {
     display: flex;
     justify-content:flex-start;
     min-height: 56px;
-}
-
-.site-navigation-link {
-/*    display: block;*/
 }
 
 .site-navigation li:nth-of-type(1) {
@@ -419,11 +415,11 @@ a {
     align-items: center;
 }
 
-.container {
+.features .container {
     width: 1200px;
     display: flex;
-    min-height: 1170px;
     flex-direction: column;
+    min-height: 1170px;
 }
 
 .features-title {
@@ -441,24 +437,70 @@ a {
 .features-item {
     width: 400px;
     height: 256px;
+    margin: 0;
+    padding: 0;
     padding-top: 46px;
     padding-bottom: 65px;
 }
 
+.features-item-image {
+    margin: 0;
+    padding: 0;
+}
+
 .features-item-white {
-    width: 400px;
     min-height: 332px;
-    align-items: flex-end;
 }
 
 .features-item-title {
     margin: 0;
     padding: 0; 
-    margin-bottom: 11px;
+    margin-bottom: 24px;
 }
 
 .features-item-text {
-    margin-bottom: 11px;
+    margin: 0;
+    padding: 0;
+    margin-bottom: 21px;
 }
 
+.search {
+    margin: 0;
+    padding: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.main-footer {
+   padding: 36px 0; 
+}
+
+.footer-hashtag {
+    width: 400px;
+    margin: 0;
+    min-height: 120px;
+    text-align: center;
+}
+
+.footer-social {
+    width: 400px;
+    margin: 0;
+    min-height: 120px;
+    text-align: center;
+}
+
+.footer-copyright {
+    width: 400px;
+    margin: 0;
+    min-height: 120px;
+    text-align: center;
+}
+
+.main-footer .container {
+    display: flex;
+}
+
+/* Сеточные стили для внутренний*/
 
