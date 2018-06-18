@@ -26,7 +26,7 @@ html {
     margin: 0 40px;
     padding: 0;
     background-color: #ffffff;
-/*    background-color: red; временно чтоб видеть отступы*/
+    box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
 
 a {
@@ -371,9 +371,6 @@ a {
     line-height: 21px;
 }
 
-
-
-
 /* Сеточные стили для главной*/
 
 .main-header {
@@ -381,12 +378,12 @@ a {
 }
 
 .site-navigation {
+    display: flex;
+    justify-content:flex-start;
     margin: 0;
     padding-top: 15px;
     padding-left: 71px;
     padding-right: 71px;
-    display: flex;
-    justify-content:flex-start;
     min-height: 56px;
 }
 
@@ -402,7 +399,7 @@ a {
 }
 
 .main-header-logo {
-    width: 138;
+    width: 138px;
     height: 70px;
 	position: absolute;
     top: 0;
@@ -416,9 +413,9 @@ a {
 }
 
 .features .container {
-    width: 1200px;
     display: flex;
     flex-direction: column;
+    width: 1200px;
     min-height: 1170px;
 }
 
@@ -465,12 +462,12 @@ a {
 }
 
 .search {
-    margin: 0;
-    padding: 0;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     align-items: center;
+    margin: 0;
+    padding: 0; 
 }
 
 .main-footer {
@@ -479,22 +476,22 @@ a {
 
 .footer-hashtag {
     width: 400px;
-    margin: 0;
     min-height: 120px;
+    margin: 0;
     text-align: center;
 }
 
 .footer-social {
     width: 400px;
-    margin: 0;
     min-height: 120px;
+    margin: 0;
     text-align: center;
 }
 
 .footer-copyright {
     width: 400px;
-    margin: 0;
     min-height: 120px;
+    margin: 0;
     text-align: center;
 }
 
@@ -503,4 +500,81 @@ a {
 }
 
 /* Сеточные стили для внутренний*/
+.filters {
+    width: 1200px;
+    min-height: 217px;
+}
+
+.hotels-columns {
+    display: flex;
+    flex-direction: column;
+    justify-content:flex-start;
+    width: 1200px;
+    min-height: 757px;
+}
+
+.filter {
+    display: flex;
+    flex-direction: row;
+    width: 1200px;
+    margin: 0;
+    padding-left: 72px;
+    padding-right: 72px;
+    padding-top: 32px;
+    padding-bottom: 32px;
+}
+
+.filter fieldset:nth-of-type(1) {
+    width: 240px;
+    margin: 0;
+    padding: 0;    
+}
+
+.filter fieldset:nth-of-type(2) {
+    width: 288px;
+    margin: 0;
+    padding: 0; 
+    padding-right: 200px;
+}
+
+.filter-list {
+    margin: 0;
+    padding: 0; 
+}
+
+.sorting {
+    border-bottom: 1px solid #e5e5e5;   
+}
+
+.search-result-list {
+    display: flex;
+    flex-direction: column;
+    width: 1200px;
+    min-height: 453px;
+    margin: 0;
+    padding: 0;
+}
+
+.search-result-item {
+    display: flex;
+    justify-content:flex-start;
+    width: 1200px;
+    min-height: 151px;
+    padding-top: 30px;
+    padding-bottom: 30px;
+    padding-left: 72px;
+    border-bottom: 1px solid #e5e5e5;
+}
+
+.result-item-image {
+    margin: 0;
+    padding: 0;
+    padding-right: 32px;
+}
+
+.result-item-rating {
+    align-self: flex-start;
+    padding-right: 72px;
+}
+
 
