@@ -461,6 +461,7 @@ a {
 }
 
 .sorting-amt {
+    width: 138px;
     margin: 0;
     padding: 0;
     margin-right: 48px;
@@ -548,9 +549,6 @@ a {
 
 /*результат поиска*/
 .search-result-list {
-    display: flex;
-    flex-direction: column;
-    width: 100%;
     margin: 0;
     padding: 0;
     list-style: none;
