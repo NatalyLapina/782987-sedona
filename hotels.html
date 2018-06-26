@@ -63,20 +63,17 @@
                             </ul>
                         </fieldset>
                         <fieldset class="filter-column">
-                            <legend class="filter-legend">Стоимость в сутки (р):</legend>
-                            <label for="filter-price-min">От</label>
-                            <input id="filter-price-min" type="text" name="price-min" value="0">
-                            <label for="filter-price-max">До</label>
-                            <input id="filter-price-max" type="text" name="price-max" value="3000">
-                            <div class="range">
-                                <div class="range-one">
-                                    <label for="filter-range-min" class="visually-hidden">Минимальная стоимость</label>
-                                    <input id="filter-range-min" type="range" name="min-cost" min="0" max="5000" value="0">
+                            <legend class="filter-legend filter-legend-price">Стоимость в сутки (р):</legend>
+                            <div class="filter-price-controls">
+                                <label class="filter-price-label filter-min-price">От<input class="filter-price-input" type="text" name="min-price" value="0"></label>
+                                <label class="filter-price-label filter-max-price">До<input class="filter-price-input" type="text" name="max-price" value="3000"></label>
+                            </div>
+                            <div class="filter-range-controls">
+                                <div class="range-controls-scala">
+                                    <div class="range-controls-bar"></div>
                                 </div>
-                                <div class="range-two">
-                                    <label for="filter-range-max" class="visually-hidden">Максимальная стоимость</label>
-                                    <input id="filter-range-max" type="range" name="max-cost" min="0" max="5000" value="3000">       
-                                </div>
+                                <div class="filter-range-toggle range-toggle-min"></div>
+                                <div class="filter-range-toggle range-toggle-max"></div>
                             </div>
                             <button class="button-filter" type="submit">Показать</button>
                         </fieldset>
