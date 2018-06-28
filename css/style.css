@@ -30,18 +30,14 @@ img {
 }
 
 .visually-hidden:not(:focus):not(:active),
-input[type="checkbox"].visually-hidden,
-input[type="radio"].visually-hidden {
+input[type="checkbox"].visually-hidden {
   position: absolute;
-
   width: 1px;
   height: 1px;
   margin: -1px;
   border: 0;
   padding: 0;
-
   white-space: nowrap;
-
   clip-path: inset(100%);
   clip: rect(0 0 0 0);
   overflow: hidden;
@@ -154,7 +150,6 @@ input[type="radio"].visually-hidden {
     align-items: center;
     width: 100%;
     min-height: 508px;
-    
     background-color: #dad7db;
     background-image: url("../img/shape.png"), url("../img/background-photo.jpg");
     background-position: 0 451px, 0 -85px;
@@ -756,11 +751,9 @@ input[type="radio"].visually-hidden {
     display: block;
     margin: 0 auto;
     padding: 6px 32px 4px 33px;
-
     font: inherit;
     color: #ffffff;
     text-transform: uppercase;
-
     background: transparent;
     border: 2px solid #ffffff;
     border-radius: 2px;
@@ -793,6 +786,7 @@ input[type="radio"].visually-hidden {
 
 .sorting-list {
     display: flex;
+    align-items: center;
     width: 100%;
     margin: 0;
     padding: 0;
@@ -915,15 +909,14 @@ input[type="radio"].visually-hidden {
     line-height: 0;
     font-weight: bold;
     color: #000000;
-/*    text-align: left;*/
 }
 
-.result-item-title:hover,
-.result-item-title:focus {
+.result-item-title-link:hover,
+.result-item-title-link:focus {
     color: #81b3d2;
 }
 
-.result-item-title:active {
+.result-item-title-link:active {
     color: rgba(0, 0, 0, 0.3);
 }
 
@@ -944,7 +937,6 @@ input[type="radio"].visually-hidden {
     min-width: 142px; 
 }
 
-
 .button-more-info,
 .button-booking {
     padding: 4px 17px;
@@ -956,6 +948,19 @@ input[type="radio"].visually-hidden {
     margin-right: 3px;
 }
 .result-item-rating {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
     margin-left: auto;
     text-align: right;
 }
+
+.rating {
+    margin: 0;
+    padding: 0;
+    width: 110px;
+    background-color: #f2f2f2;
+    line-height: 27px;
+    text-align: center;
+}
+
