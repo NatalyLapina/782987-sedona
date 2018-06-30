@@ -97,6 +97,7 @@ input[type="checkbox"].visually-hidden {
     display: flex;
     flex-wrap: wrap;
     width: 100%;
+    min-height: 56px;
     justify-content:flex-start;
     margin: 0;
     padding: 15px 72px;
@@ -118,6 +119,14 @@ input[type="checkbox"].visually-hidden {
 .site-navigation-item:nth-child(3),
 .site-navigation-item:nth-child(4) {
     text-align: right;
+}
+
+.site-navigation-item:nth-child(2) .site-navigation-link {
+    margin-left: -24px;
+}
+
+.site-navigation-item:nth-child(3) .site-navigation-link {
+    margin-right: -19px;
 }
 
 .main-header-logo {
@@ -148,9 +157,10 @@ input[type="checkbox"].visually-hidden {
     display: flex;
     justify-content: center;
     align-items: center;
+    margin-bottom: 59px;
     width: 100%;
     min-height: 508px;
-    background-color: #dad7db;
+    background-color: #eeeeee;
     background-image: url("../img/shape.png"), url("../img/background-photo.jpg");
     background-position: 0 451px, 0 -85px;
     background-repeat: no-repeat;
@@ -162,8 +172,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .intro-title {
-    margin-top: 60px;
-    margin-bottom: 27px;
+    margin-bottom: 30px;
     text-align: center;
     font-size: 21px;
     line-height: 26px;
@@ -198,39 +207,35 @@ input[type="checkbox"].visually-hidden {
     width: 400px;
     margin: 0;
     padding: 0;
-    padding-top: 47px;
+    padding-top: 46px;
     padding-bottom: 59px;
     text-align: center;
 }
 
 .features-item-blue {
+    min-height: 256px;
     background-color: #81b3d2;
 } 
 
 .features-item-white {
+    padding-top: 161px;
+    padding-bottom: 82px;
+    min-height: 330px;
     background-color: #ffffff;
 } 
 
 .features-item-grey {
+    min-height: 256px;
     background-color: #eeeeee;
-}
-
-.features-item-white {
-    padding-top: 161px;
-    padding-bottom: 82px;
 }
 
 .features-item-title {
     position: relative;
     margin: 0;
     padding: 0 120px; 
-    margin-bottom: 24px;
+    margin-bottom: 25px;
     font-size: 21px;
     font-weight: bold;
-}
-
-.features-item-blue .features-item-title {
-    color: #ffffff;
 }
 
 .features-item-white:nth-child(1) .features-item-title::before {
@@ -249,7 +254,7 @@ input[type="checkbox"].visually-hidden {
 .features-item-white:nth-child(2) .features-item-title::before {
     content: "";
     position: absolute;
-    top: -102px;
+    top: -100px;
     left: 50%;
     transform: translateX(-50%);
     width: 74px;
@@ -262,7 +267,7 @@ input[type="checkbox"].visually-hidden {
 .features-item-white:nth-child(3) .features-item-title::before {
     content: "";
     position: absolute;
-    top: -102px;
+    top: -104px;
     left: 50%;
     transform: translateX(-50%);
     width: 64px;
@@ -277,18 +282,17 @@ input[type="checkbox"].visually-hidden {
     margin-bottom: 21px;
     padding: 0;
 }
-.features-item-blue .features-item-number {
+.features-item-blue {
     color: #ffffff;
+}
+.features-item-blue .features-item-text {
+    color: inherit;
 }
 
 .features-item-text {
     margin: 0;
     padding: 0 50px;
     color: #333333;
-}
-
-.features-item-blue .features-item-text {
-    color: #ffffff;
 }
 
 .features-item-grey .features-item-text {
@@ -331,26 +335,53 @@ input[type="checkbox"].visually-hidden {
 .button-search {
     display: block;
     margin: 0 auto;
-    padding: 0;
-    padding: 30px 140px;
+    padding: 28px 139px 32px 139px;
 }
 
 /*модальное окно*/
 .search-modal {
     position: absolute;
-    display: block;
+    display: none;
     width: 568px;
-    height: 395px;
+    min-height: 395px;
     margin: 0 316px;
-    padding: 55px;
+    padding: 0;
     box-shadow: 0px 7px 15px 0 rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
+    z-index: 10;
 }
  
+@keyframes bounce {
+    0% {
+    transform: translateY(0px);
+    }
+    50% {
+    transform: translateY(10px);
+    }
+    70% {
+    transform: translateY(-10px);
+    }
+
+    90% {
+    transform: translateY(5px);
+    }
+
+    100% {
+    transform: translateY(0px);
+    }
+}
+
+.modal-show {
+    display: block;
+    animation-name: bounce;
+    animation-duration: 1s;
+}
+
 .search-form {
     display: flex;
     flex-wrap: wrap;
     justify-content: space-between;
+    padding: 55px;
     width: 100%;
 }
 
@@ -362,10 +393,14 @@ input[type="checkbox"].visually-hidden {
     width: 458px;
     padding: 0;
     margin: 0;
-    margin-bottom: 30px;
+    margin-bottom: 29px;
     line-height: 26px;
 }
  
+.search-item:nth-child(2) {
+    margin-bottom: 30px;
+}
+
 .search-item-adult {
     justify-content: flex-start;
     width: 226px;
@@ -394,12 +429,12 @@ input[type="checkbox"].visually-hidden {
 .search-form-input {
     box-sizing: border-box;
     width: 346px;
-    min-height: 38px;
-    padding: 11px 20px 11px 13px;    
+    height: 38px;
+    padding: 11px;    
     font-weight: bold;
     text-transform: uppercase;
     background-color: #f2f2f2;
-    border: none;
+    border: 2px solid transparent;
 }
 
 .search-item-calendar {
@@ -463,7 +498,7 @@ input[type="checkbox"].visually-hidden {
 
 .button-find {
     margin: 0 auto;
-    padding: 15px 196px 18px 196px;
+    padding: 14px 196px 17px 196px;
 }
 
 .search-form-input:hover {
@@ -475,14 +510,33 @@ input[type="checkbox"].visually-hidden {
     border: 2px solid #e5e5e5;
 } 
 
+/*карта*/
+
+.map {
+    position: relative;
+}
+
+.embed-map {
+    position: absolute;
+    top: 0;
+    left: 0;
+    border: 0;
+}
+
+.image-map {
+    display: block;
+    width: 1200px;
+    height: 593px;
+}
 
 /*футер*/
 .main-footer {
     width: 100%;
     min-height: 120px;
     display: flex;
+    align-items:flex-start;
+    text-align: center;
     margin: 0;
-    padding: 36px 0px 36px 0px;
 }
 
 .main-footer-index {
@@ -495,17 +549,17 @@ input[type="checkbox"].visually-hidden {
 .footer-hashtag {
     width: 400px;
     margin: 0;
-    margin-top: 8px;
+    margin-top: 46px;
     padding: 0;
     font-size: 21px;
     line-height: 26px;
     font-weight: bold;
-    text-align: center;
 }
 
 .footer-social {
     width: 400px;
     margin: 0;
+    padding-top: 36px;
 }
 
 .footer-social-list {
@@ -544,21 +598,25 @@ input[type="checkbox"].visually-hidden {
 
 .footer-copyright {
     display: flex;
+    align-items: center;
     justify-content: center;
     margin: 0 auto;
     padding: 0;
+    padding-top: 33px;
     width: 400px;
     line-height: 26px;
 }
 
 .footer-copyright-text {
-    margin-top: 10px;
     margin-right: 8px;
-    font-weight: normal;
+}
+
+.logo-htmlacademy {
+    padding-top: 6px;
 }
 
 .logo-htmlacademy:hover path,
-.logo-htmlacademy:hover path {
+.logo-htmlacademy:focus path {
     fill: #81b3d2;
 }
 
@@ -662,9 +720,15 @@ input[type="checkbox"].visually-hidden {
     opacity: 0.5;
 }
 
+.filter-input:focus + .filter-option-label {
+  outline: thin dotted;
+  outline: 5px auto -webkit-focus-ring-color;
+}
+
 /*сложный фильтр*/
 .filter-legend-price {
-    margin-bottom: 9px; 
+    margin-bottom: 9px;
+    margin-left: 2px;
 }
 
 .filter-price-controls {
@@ -689,15 +753,16 @@ input[type="checkbox"].visually-hidden {
 
 .filter-price-label {
     display: inline-block;
+    margin-top: 6px;
     font-size: 14px;
-    line-height: 30px;
+    line-height: 21px;
     vertical-align: top;
     cursor: pointer;
 }
 
 .filter-price-controls .filter-min-price,
 .filter-price-controls .filter-max-price {
-    width: 143px;
+    width: 147px;
     padding-left: 65px;
 }
 
@@ -729,11 +794,10 @@ input[type="checkbox"].visually-hidden {
 .filter-range-toggle {
     position: absolute;
     top: -9px;
-    box-sizing: content-box;
-    width: 4px;
-    height: 4px;
+    width: 21px;
+    height: 21px;
     background: #ababab;
-    border: 8px solid #ffffff;
+    border: 9px solid #ffffff;
     border-radius: 50%;
     box-shadow: 0 2px 1px 0 rgba(0, 1, 1, 0.2);
     cursor: pointer;
@@ -747,10 +811,17 @@ input[type="checkbox"].visually-hidden {
     left: 80%;
 }
 
+.filter-range-toggle:hover {
+    top: -10px;
+    border: 9px solid #ffffff;
+    width: 22px;
+    height: 22px;
+}
+
 .button-filter {
     display: block;
-    margin: 0 auto;
-    padding: 6px 32px 4px 33px;
+    margin-left: 85px;
+    padding: 6px 34px;
     font: inherit;
     color: #ffffff;
     text-transform: uppercase;
@@ -766,6 +837,7 @@ input[type="checkbox"].visually-hidden {
     background-color: #ffffff;
 }
 
+    
 /*сортировка*/
 .sorting {
     display: flex;
@@ -775,7 +847,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .sorting-amt {
-    width: 138px;
+    flex-shrink: 0;
     margin: 0;
     padding: 0;
     margin-right: 48px;
@@ -790,6 +862,7 @@ input[type="checkbox"].visually-hidden {
     width: 100%;
     margin: 0;
     padding: 0;
+    padding-top: 8px;
     list-style: none;
     font-size: 12px;
     line-height: 18px;
@@ -901,12 +974,13 @@ input[type="checkbox"].visually-hidden {
 .result-item-title {
     margin: 0;
     padding: 0;
+    margin-top: -6px;
     margin-bottom: 10px;
 }
 
 .result-item-title-link {
     font-size: 21px;
-    line-height: 0;
+    line-height: 26px;
     font-weight: bold;
     color: #000000;
 }
@@ -922,7 +996,7 @@ input[type="checkbox"].visually-hidden {
 
 .result-item-kind-and-price {
     display: flex;
-    margin-bottom: 12px;
+    margin-bottom: 14px;
     min-width: 258px; 
 }
 
@@ -945,7 +1019,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .button-more-info {
-    margin-right: 3px;
+    margin-right: 2px;
 }
 .result-item-rating {
     display: flex;
@@ -958,9 +1032,12 @@ input[type="checkbox"].visually-hidden {
 .rating {
     margin: 0;
     padding: 0;
+    padding-top: 3px;
     width: 110px;
+    height: 27px;
     background-color: #f2f2f2;
-    line-height: 27px;
+    color: #666666;
+    line-height: 21px;
     text-align: center;
 }
 
