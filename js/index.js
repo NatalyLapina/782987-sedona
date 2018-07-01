@@ -10,6 +10,9 @@ var child = popup.querySelector("[name=child]");
 var storageA = localStorage.getItem("adult");
 var storageC = localStorage.getItem("child");
 
+document.documentElement
+    .classList.replace('no-js', 'js');
+        
 btn.addEventListener("click", function (evt) {
     evt.preventDefault();
     popup.classList.toggle("modal-show");

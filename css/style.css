@@ -165,18 +165,11 @@ input[type="checkbox"].visually-hidden {
 
 /*интро*/
 .intro {
-    display: -webkit-box;
-    display: -ms-flexbox;
-    display: flex;
-    -webkit-box-pack: center;
-        -ms-flex-pack: center;
-            justify-content: center;
-    -webkit-box-align: center;
-        -ms-flex-align: center;
-            align-items: center;
+    padding-top: 75px;
     margin-bottom: 59px;
     width: 100%;
     min-height: 508px;
+    text-align: center;
     background-color: #eeeeee;
     background-image: url("../img/shape.png"), url("../img/background-photo.jpg");
     background-position: 0 451px, 0 -85px;
@@ -368,7 +361,7 @@ input[type="checkbox"].visually-hidden {
 /*модальное окно*/
 .search-modal {
     position: absolute;
-    display: none;
+    display: block;
     width: 568px;
     min-height: 395px;
     margin: 0 316px;
@@ -378,7 +371,19 @@ input[type="checkbox"].visually-hidden {
     background-color: #ffffff;
     z-index: 10;
 }
- 
+
+.js .search-modal {
+    display: none;
+}
+
+.js .modal-show {
+    display: block;
+    -webkit-animation-name: bounce;
+            animation-name: bounce;
+    -webkit-animation-duration: 1s;
+            animation-duration: 1s;
+}
+
 @-webkit-keyframes bounce {
     0% {
     -webkit-transform: translateY(0px);
@@ -427,14 +432,6 @@ input[type="checkbox"].visually-hidden {
     -webkit-transform: translateY(0px);
             transform: translateY(0px);
     }
-}
-
-.modal-show {
-    display: block;
-    -webkit-animation-name: bounce;
-            animation-name: bounce;
-    -webkit-animation-duration: 1s;
-            animation-duration: 1s;
 }
 
 .search-form {
@@ -515,11 +512,13 @@ input[type="checkbox"].visually-hidden {
 
 .search-item-calendar {
     position: absolute;
-    width: 38px;
-    height: 38px;
-    right: 0; 
-    background-color: #f2f2f2;
-    border: 0;
+    right: 9px;
+    top: 8px;
+    padding: 0;
+    border: none;
+    background: none;
+    fill: #c9c9c9;
+
 }
 
 .search-item-calendar path {
