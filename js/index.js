@@ -5,7 +5,7 @@ var popup = document.querySelector(".search-modal");
 var checkin = popup.querySelector("[name=checkin]");
 
 document.documentElement
-    .classList.replace('no-js', 'js');
+    .classList.remove("no-js");
         
 btn.addEventListener("click", function (evt) {
     evt.preventDefault();

@@ -361,7 +361,7 @@ input[type="checkbox"].visually-hidden {
 /*модальное окно*/
 .search-modal {
     position: absolute;
-    display: block;
+    display: none;
     width: 568px;
     min-height: 395px;
     margin: 0 316px;
@@ -372,11 +372,11 @@ input[type="checkbox"].visually-hidden {
     z-index: 10;
 }
 
-.js .search-modal {
-    display: none;
+.no-js .search-modal {
+    display: block;
 }
 
-.js .modal-show {
+.modal-show {
     display: block;
     -webkit-animation-name: bounce;
             animation-name: bounce;
@@ -486,15 +486,13 @@ input[type="checkbox"].visually-hidden {
 }
 
 .search-form-label {
+    min-width: 112px;
     font-weight: bold; 
     color: #000000;
 }
 
-.search-item-adult .search-form-label {
-    margin-right: 41px;
-}
-
 .search-item-child .search-form-label {
+    min-width: 0; 
     margin-right: 27px;
 }
 
