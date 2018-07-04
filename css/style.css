@@ -55,7 +55,7 @@ input[type="checkbox"].visually-hidden {
             box-shadow: 0 5px 15px rgba(0,1,1,0.2);
 }
 
-/*кнопки*/
+/*button*/
 .button {
     font: inherit;
     font-size: 21px;
@@ -92,7 +92,7 @@ input[type="checkbox"].visually-hidden {
     background-color: #503e33;
 }
 
-/*шапка*/
+/*header*/
 .main-header {
     position: relative;
 }
@@ -163,7 +163,7 @@ input[type="checkbox"].visually-hidden {
     color: rgba(0, 0, 0, 0.3);
 }
 
-/*интро*/
+/*intro*/
 .intro {
     padding-top: 75px;
     margin-bottom: 59px;
@@ -182,6 +182,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .intro-title {
+    padding: 0 320px;
     margin-bottom: 30px;
     text-align: center;
     font-size: 21px;
@@ -189,7 +190,7 @@ input[type="checkbox"].visually-hidden {
     font-weight: bold;
 }
 
-/*преимущества*/
+/*features*/
 .features {
     width: 1200px;
 }
@@ -331,7 +332,7 @@ input[type="checkbox"].visually-hidden {
     display: block;
 }
 
-/*поиск*/
+/*search*/
 .search-question {
     margin: 0;
     padding: 0; 
@@ -354,11 +355,11 @@ input[type="checkbox"].visually-hidden {
 
 .button-search {
     display: block;
-    margin: 0 auto;
+    margin: 0 315px;
     padding: 28px 139px 32px 139px;
 }
 
-/*модальное окно*/
+/*pop up*/
 .search-modal {
     position: absolute;
     display: none;
@@ -583,7 +584,7 @@ input[type="checkbox"].visually-hidden {
     border: 2px solid #e5e5e5;
 } 
 
-/*карта*/
+/*map*/
 
 .map {
     position: relative;
@@ -602,7 +603,7 @@ input[type="checkbox"].visually-hidden {
     height: 593px;
 }
 
-/*футер*/
+/*footer*/
 .main-footer {
     width: 100%;
     min-height: 120px;
@@ -731,7 +732,7 @@ input[type="checkbox"].visually-hidden {
     color: #766357;
 }
 
-/*фильтр*/
+/*filter*/
 .filter-block {
     color: #ffffff;
     background-color: #81b3d2;
@@ -822,7 +823,7 @@ input[type="checkbox"].visually-hidden {
   outline: 5px auto -webkit-focus-ring-color;
 }
 
-/*сложный фильтр*/
+/*complex filter*/
 .filter-legend-price {
     margin-bottom: 9px;
     margin-left: 2px;
@@ -936,9 +937,8 @@ input[type="checkbox"].visually-hidden {
     color: #000000;
     background-color: #ffffff;
 }
-
     
-/*сортировка*/
+/*sorting*/
 .sorting {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -1054,7 +1054,7 @@ input[type="checkbox"].visually-hidden {
     fill: #81b3d2;
 } 
 
-/*результат поиска*/
+/*search results*/
 .search-result-list {
     margin: 0;
     padding: 0;
@@ -1149,6 +1149,7 @@ input[type="checkbox"].visually-hidden {
 
 .rating {
     margin: 0;
+    margin-left: auto;
     padding: 0;
     padding-top: 3px;
     width: 110px;
@@ -1158,4 +1159,6 @@ input[type="checkbox"].visually-hidden {
     line-height: 21px;
     text-align: center;
 }
-
+.rating-stars {
+    font-size: 21px;
+}
