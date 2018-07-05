@@ -656,6 +656,10 @@ input[type="checkbox"].visually-hidden {
     list-style: none;
 }
 
+.social-button-item {
+    margin-bottom: 6px;
+}
+
 .social-button {
     display: -webkit-box;
     display: -ms-flexbox;
@@ -985,11 +989,7 @@ input[type="checkbox"].visually-hidden {
     margin-right: 40px;
 }
 
-.sorting-item:nth-child(2) {
-    margin-right: 32px;
-}
-
-.sorting-item:nth-child(3) {
+.sorting-item {
     margin-right: 32px;
 }
 
