@@ -109,7 +109,7 @@ input[type="checkbox"].visually-hidden {
         -ms-flex-pack:start;
             justify-content:flex-start;
     margin: 0;
-    padding: 15px 72px;
+    padding: 15px 0;
     list-style: none;
     line-height: 26px;
     font-weight: bold;
@@ -117,25 +117,23 @@ input[type="checkbox"].visually-hidden {
 }
 
 .site-navigation-item {
-    width: 25%;
+    width: 20%;
 }
 
-.site-navigation-item:nth-child(1),
-.site-navigation-item:nth-child(2) {
+.site-navigation-item:nth-child(4n+1),
+.site-navigation-item:nth-child(4n+2) {
+    padding-left: 72px;
     text-align: left;
 }
 
-.site-navigation-item:nth-child(3),
-.site-navigation-item:nth-child(4) {
+.site-navigation-item:nth-child(4n+3),
+.site-navigation-item:nth-child(4n+4) {
+    padding-right: 72px;
     text-align: right;
 }
 
-.site-navigation-item:nth-child(2) .site-navigation-link {
-    margin-left: -24px;
-}
-
-.site-navigation-item:nth-child(3) .site-navigation-link {
-    margin-right: -19px;
+.site-navigation-item:nth-child(4n+2) {
+    margin-right: 20%;
 }
 
 .main-header-logo {
@@ -355,8 +353,9 @@ input[type="checkbox"].visually-hidden {
 
 .button-search {
     display: block;
-    margin: 0 315px;
-    padding: 28px 139px 32px 139px;
+    margin: 0 auto;
+    padding: 28px 28px 32px 28px;
+    width: 568px;
 }
 
 /*pop up*/
@@ -371,10 +370,6 @@ input[type="checkbox"].visually-hidden {
             box-shadow: 0 7px 15px 0 rgba(0, 1, 1, 0.15);
     background-color: #ffffff;
     z-index: 10;
-}
-
-.no-js .search-modal {
-    display: block;
 }
 
 .modal-show {
