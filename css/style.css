@@ -117,6 +117,7 @@ input[type="checkbox"].visually-hidden {
 }
 
 .site-navigation-item {
+    position: relative;
     width: 20%;
 }
 
